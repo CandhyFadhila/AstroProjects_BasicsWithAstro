@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/layouts.astro";
+const title = "Homepage";
+---
+
+<!-- TODO | INI ISIAN YG DISUNTIKKAN KE "SLOT" DI FILE LAYOUT -->
+<!-- ? title={title} Untuk panggil masing" title di atas per halaman-->
+<Layout title={title}>
+    <div class="cookie-card">
+        <span class="title">🍪 {title}</span>
+        <p class="description">
+            Ini website halaman <a href="#">{title}</a>.
+        </p>
+        <div class="actions">
+            <button class="accept">
+                <a href="/about">Halaman About</a>
+            </button>
+        </div>
+    </div>
+</Layout>
